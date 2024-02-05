@@ -5,6 +5,7 @@
   / /_| | | | | | | | / /  / /_| | | |\   | | |     |  __|  | | | |      | | /  | / /   |  _  | | |   | |   |  __|  | |     | | \___  \   | |   
  /  __  | | |_| | | |/ /  /  __  | | | \  | | |___  | |___  | |_| |      | |/   |/ /    | | | | | |   | |   | |___  | |___  | |  ___| |   | |   Made By xiaoheiCat who is in Xianying Studio
 /_/   |_| |_____/ |___/  /_/   |_| |_|  \_| \_____| |_____| |_____/      |___/|___/     |_| |_| |_|   |_|   |_____| |_____| |_| /_____/   |_|   https://github.com/Next-Playground-Game-Studio/Whitelist
+The plugin can add player, remove player from the whitelist by using an simple OP command. And it can also reload whitelist config file from disk while the server were running!
 
 */
 
