@@ -1,35 +1,49 @@
-# LeviLamina Plugin Template
+# Advanced whitelisting (abbreviated as whitelisting)
 
-A LeviLamina plugin template
+English | [简体中文](https://github.com/Next-Playground-Game-Studio/Whitelist/blob/main/README.zh.md)
 
-This plugin is a template for developing LeviLamina plugins.
+Welcome to Advanced Whitelist! This plugin allows you to add and remove members of a whitelist with a simple OP command, and reload the whitelist configuration file from disk while the server is running!
 
-## Install
+Unlike the original version, where whitelist commands had to be executed on the console and whitelist files could not be hot-updated, Advanced Whitelist allows OPs to whitelist directly from the chat box by logging in to the game without logging in to the console, saving you time and effort. However, please avoid giving OP privileges to people you don't trust, as this may pose a security risk to your server.
 
-Generate a new repository from this template.
+It is recommended to deactivate the original whitelist before enabling the plugin to prevent conflicts. Do not use other plugins to set up pseudonyms for players, this may result in certain players bypassing the whitelist or accidentally not being able to join the server. This issue will be fixed in a future release.
 
-## Usage
+This plugin was made for LeviLamina. Until then, please download LeviLamina and its dependency packages using Lip or manually. I'll explain more below.
 
-Before using this plugin template, make sure that you have installed XMake and a Minecraft Bedrock Server with LeviLamina.
+## Install / Update
 
-1. Clone the new repository into a local folder.
+### Install / Update using Lip
 
-1. Change the plugin name and the expected LeviLamina version in `xmake.lua`.
+```shell
+lip install github.com/Next-Playground-Game-Studio/Whitelist
+```
 
-1. Add your code.
+### Manually
 
-1. Run `xmake repo -u` in the root of the repository.
+#### How to install LeviLamina
 
-1. Run `xmake` to build the plugin.
+The official LeviLamina documentation provides the download instructions. Please follow the tutorials in their official documentation to complete the installation. [Portal 👉](https://levilamina.liteldev.com/zh/install/)
 
-Now the build is complete at `bin/`.
+#### How to install the plugin  
 
-## Contributing
+Download the latest version of the plugin zip from [Release](https://github.com/Next-Playground-Game-Studio/Whitelist/releases), then unzip it using compression software, and place the `Whitelist` folder into the `plugins` folder in the BDS root directory.
 
-Ask questions by [creating an issue](https://github.com/LiteLDev/levilamina-plugin-template/issues/new/choose).
+## Use
 
-PRs accepted.
+| Commands | Functions | Permission |
+| --- | --- | --- |
+| /whitelistadd \<Player Name> | Add player to whitelist | OP  |
+| /whitelistremove \<Player Name> | Remove player from whitelist | OP  |
+| /reloadwhitelist | Reload whitelist configuration file from disk | OP  |
+
+Note: \<PlayerName> must be the player's full name, no player selectors such as @a, @p, @r, etc.
+
+## Contribute
+
+To contact us, search for the QQ channel number `XianyingStu233` and post plugin feedback in the post square (be sure to select the correct category). The answer to the channel join question is `白日飞升` (Feel free to search for the map on NetEase My World). Chinese required.
+
+To participate in the development, please contact us as well. Pull Requests are also welcome.
 
 ## License
 
-CC0-1.0 © LiteLDev
+GPL-3.0 © Xianying Studio & Next Playground
