@@ -36,7 +36,7 @@ Download the latest version of the plugin zip from [Release](https://github.com/
 | /whitelistremove \<Player Name> | Remove player from whitelist | OP  |
 | /reloadwhitelist | Reload whitelist configuration file from disk | OP  |
 
-Note: \<PlayerName> must be the player's full name, no player selectors such as @a, @p, @r, etc.
+Note: \<Player Name> must be the player's full name, no player selectors such as @a, @p, @r, etc.
 
 ## Contribute
 
