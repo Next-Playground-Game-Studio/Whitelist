@@ -72,7 +72,7 @@ jobs:
     - name: Update version in tooth.json
       run: |
         VERSION=${{ steps.new_version.outputs.release_version }}
-        jq '.version = "'$VERSION'"' tooth.json > temp.json && mv temp.json tooth.json
+        jq ".version = \"${VERSION}\"" tooth.json > temp.json && mv temp.json tooth.json
       shell: bash
 
     - name: Commit and push changes
