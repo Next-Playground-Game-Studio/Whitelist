@@ -14,6 +14,18 @@
 
 ### 使用 Lip 安装 / 更新
 
+1.安装 LeviLamina 以及 LegacyScriptEngine。
+
+```shell
+lip install github.com/LiteLDev/LeviLamina
+```
+
+```shell
+lip install github.com/LiteLDev/LegacyScriptEngine
+```
+
+2.安装本插件。
+
 ```shell
 lip install github.com/Next-Playground-Game-Studio/Whitelist
 ```
@@ -23,6 +35,16 @@ lip install github.com/Next-Playground-Game-Studio/Whitelist
 #### 如何安装 LeviLamina
 
 LeviLamina 的官方文档提供了下载方法。请按照其官方文档的教程完成安装。[传送门👉](https://levilamina.liteldev.com/zh/install/)
+
+#### 如何安装 LegacyScriptEngine
+
+1.前往 LegacyScriptEngine 的 GitHub Release 地址。[传送门👉](https://github.com/LiteLDev/LegacyScriptEngine/releases)
+
+2.找到最新版本的 Release，展开 Assets，下载 `legacy-script-engine-quickjs-windows-x64.zip`。
+
+3.下载完成后使用压缩软件解压压缩包，从中找到名为`legacy-script-engine-quickjs`的文件夹。
+
+4.将该文件夹复制到 BDS 根目录中的`plugins`文件夹中即可。
 
 #### 如何安装插件  
 
