@@ -44,7 +44,7 @@ The configuration file is in the `BDS Root Directory\plugins\Whitelist\whitelist
 
 ## Contribute
 
-To contact us, search for the QQ channel number `XianyingStu233` and post plugin feedback in the post square (be sure to select the correct category). The answer to the channel join question is `白日飞升` (Feel free to search for the map on NetEase My World). Chinese required.
+To contact us, search for the QQ channel number `XianyingStu233` and post plugin feedback in the post square (be sure to select the correct category). The answer to the channel join question is `白日飞升` (Feel free to search for the map on Minecraft China Edition). Chinese required.
 
 To participate in the development, please contact us as well. Pull Requests are also welcome.
 
