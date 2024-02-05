@@ -1,5 +1,10 @@
 {
-    "name": "${pluginName}",
-    "entry": "${pluginFile}",
-    "type": "native"
+    "entry": "Whitelist.js",
+    "name": "Whitelist",
+    "type": "lse-quickjs",
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
 }
