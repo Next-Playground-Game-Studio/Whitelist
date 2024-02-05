@@ -38,6 +38,10 @@ Download the latest version of the plugin zip from [Release](https://github.com/
 
 Note: \<Player Name> must be the player's full name, no player selectors such as @a, @p, @r, etc.
 
+## Configuration files
+
+The configuration file is in the `BDS Root Directory\plugins\Whitelist\whitelist.txt`, which holds all whitelisted members of the server. If you need to change it, just edit it directly, one player name per line, and be careful not to have blank lines.
+
 ## Contribute
 
 To contact us, search for the QQ channel number `XianyingStu233` and post plugin feedback in the post square (be sure to select the correct category). The answer to the channel join question is `白日飞升` (Feel free to search for the map on NetEase My World). Chinese required.
