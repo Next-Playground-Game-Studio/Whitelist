@@ -14,7 +14,7 @@
         ]
     },
     "prerequisites": {
-        "github.com/LiteLDev/LeviLamina": "0.7.x"
+        "github.com/LiteLDev/LeviLamina": "0.7.x",
         "github.com/LiteLDev/LegacyScriptEngine": "0.1.x"
     }
 }
