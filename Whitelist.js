@@ -1,3 +1,15 @@
+/*
+     ___   _____   _     _    ___   __   _   _____   _____   _____        _          __  _   _   _   _____   _____   _       _   _____   _____  
+    /   | |  _  \ | |   / /  /   | |  \ | | /  ___| | ____| |  _  \      | |        / / | | | | | | |_   _| | ____| | |     | | /  ___/ |_   _| 
+   / /| | | | | | | |  / /  / /| | |   \| | | |     | |__   | | | |      | |  __   / /  | |_| | | |   | |   | |__   | |     | | | |___    | |   
+  / /_| | | | | | | | / /  / /_| | | |\   | | |     |  __|  | | | |      | | /  | / /   |  _  | | |   | |   |  __|  | |     | | \___  \   | |   
+ /  __  | | |_| | | |/ /  /  __  | | | \  | | |___  | |___  | |_| |      | |/   |/ /    | | | | | |   | |   | |___  | |___  | |  ___| |   | |   Made By xiaoheiCat who is in Xianying Studio
+/_/   |_| |_____/ |___/  /_/   |_| |_|  \_| \_____| |_____| |_____/      |___/|___/     |_| |_| |_|   |_|   |_____| |_____| |_| /_____/   |_|   https://github.com/Next-Playground-Game-Studio/Whitelist
+
+/*
+
+
+
 /* CONFIG AREA */
 config_joinFailed = "§c\n对不起，你还不是该服务器的成员。\n§c联系服务器管理员以了解更多。"        // 加入游戏时发现不是白名单的提示
 config_Removed = "§c\n就在刚刚，你已经不是服务器成员了。\n§c若要了解更多，请联系服务器管理员。"   // 游戏中途被移除白名单被踢的提示
@@ -33,7 +45,7 @@ function kickNonWhitelisted(player) {
 }
 
 function InitPlugin() {
-  ll.registerPlugin("Whitelist", "Replace the Bugjang fxxking whitelist!!!", [1, 0, 0], { "Author": "xiaoheiCat" })
+  ll.registerPlugin("Whitelist", "Replace the Bugjang fxxking whitelist!!!", [1, 0, 0], { "Author": "Xianying Studio" })
   InitConfig();
 
   var wladd = mc.newCommand("whitelistadd", "添加玩家到白名单。", PermType.GameMasters)
