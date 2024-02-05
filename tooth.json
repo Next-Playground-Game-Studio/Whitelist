@@ -4,7 +4,7 @@
     "version": "0.1.1",
     "info": {
         "name": "高级白名单",
-        "description": "高级白名单，让更新白名单不再像 Bugjang 的原版白名单一样复杂！现在只需运行一行命令即可！",
+        "description": "高级白名单，让更新白名单不再像 Bugjang 的原版白名单一样复杂！",
         "source": "github.com/Next-Playground-Game-Studio/Whitelist",
         "author": "Xianying Studio & Next Playground",
         "tags": [
