@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "tooth": "github.com/Next-Playground-Game-Studio/Whitelist",
+    "version": "0.1.0",
+    "info": {
+        "name": "高级白名单",
+        "description": "高级白名单，让更新白名单不再像 Bugjang 的原版白名单一样复杂！现在只需运行一行命令即可！",
+        "source": "github.com/Next-Playground-Game-Studio/Whitelist",
+        "author": "Xianying Studio & Next Playground",
+        "tags": [
+            "plugin",
+            "llse",
+            "whitelist"
+        ]
+    },
+    "prerequisites": {
+        "github.com/LiteLDev/LeviLamina": "0.7.x"
+        "github.com/LiteLDev/LegacyScriptEngine": "0.1.x"
+    }
+}
