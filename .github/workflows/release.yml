@@ -40,9 +40,9 @@ jobs:
     - name: Create Release Package
       run: |
         mkdir -p Whitelist
-        cp README.md README.zh.md ./
         cp Whitelist.js manifest.json Whitelist/
-        zip -r release.zip ./README.md ./README.zh.md Whitelist/
+        zip -r release.zip README.md README.zh.md Whitelist/
+
 
     # 创建 Release
     - name: Create Release
