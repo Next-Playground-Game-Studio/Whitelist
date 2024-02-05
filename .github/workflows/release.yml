@@ -1,0 +1,84 @@
+name: Release Workflow
+
+on:
+  push:
+    branches:
+      - main  # 或者是你想触发此workflow的分支
+    paths-ignore:
+      - 'tooth.json'  # 忽略tooth.json文件的更改
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'  # 确保获取所有的tag信息
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    # 获取最新的tag并计算新的版本号
+    - name: Calculate new version
+      id: new_version
+      run: |
+        git fetch --tags
+        LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
+        echo "Latest tag: $LATEST_TAG"
+        if [[ $LATEST_TAG == '' ]]; then LATEST_TAG='v0.0.0'; fi
+        NEW_TAG="v$(echo $LATEST_TAG | sed -r 's/v([0-9]+)\.([0-9]+)\.([0-9]+)/echo \1.\2.$((\3+1))/e')"
+        echo "New tag: $NEW_TAG"
+        VERSION_NUMBER=$(echo "$NEW_TAG" | sed 's/v//')  # 移除“v”字符
+        echo "Version number for release: $VERSION_NUMBER"
+        echo "::set-output name=version::$NEW_TAG"
+        echo "::set-output name=release_version::$VERSION_NUMBER"
+      shell: bash
+
+    # 打包指定文件
+    - name: Create Release Package
+      run: |
+        mkdir -p package/Whitelist
+        cp README.md README.zh.md package/
+        cp Whitelist.js manifest.json package/Whitelist/
+        zip -r release.zip package/
+
+    # 创建 Release
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.new_version.outputs.version }}
+        release_name: ${{ steps.new_version.outputs.release_version }}
+        draft: false
+        prerelease: true
+        body: "Auto release. Yeah I am so lazy."
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+
+    # 上传 Release 文件
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release.zip
+        asset_name: Whitelist.zip
+        asset_content_type: application/zip
+
+    - name: Update version in tooth.json
+      run: |
+        VERSION=${{ steps.new_version.outputs.release_version }}
+        jq '.version = "'$VERSION'"' tooth.json > temp.json && mv temp.json tooth.json
+      shell: bash
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git config --global user.name "${{ github.actor }}"
+        git add tooth.json
+        git commit -m "Update version in tooth.json to ${{ steps.new_version.outputs.release_version }}"
+        git push
