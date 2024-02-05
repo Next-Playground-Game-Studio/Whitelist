@@ -14,6 +14,18 @@ This plugin was made for LeviLamina. Until then, please download LeviLamina and 
 
 ### Install / Update using Lip
 
+1. Install LeviLamina and LegacyScriptEngine.
+
+```shell
+lip install github.com/LiteLDev/LeviLamina
+```
+
+```shell
+lip install github.com/LiteLDev/LegacyScriptEngine
+```
+
+2. Install this plugin.
+
 ```shell
 lip install github.com/Next-Playground-Game-Studio/Whitelist
 ```
@@ -22,7 +34,17 @@ lip install github.com/Next-Playground-Game-Studio/Whitelist
 
 #### How to install LeviLamina
 
-The official LeviLamina documentation provides the download instructions. Please follow the tutorials in their official documentation to complete the installation. [Portal 👉](https://levilamina.liteldev.com/install/)
+The official LeviLamina documentation provides the download instructions. Please follow the tutorials in their official documentation to complete the installation. [Portal👉](https://levilamina.liteldev.com/install/)
+
+#### How to install LegacyScriptEngine
+
+1. Go to the GitHub Release address for LegacyScriptEngine. [Portal👉](https://github.com/LiteLDev/LegacyScriptEngine/releases)
+
+2. Find the latest version of the Release, expand Assets and download `legacy-script-engine-quickjs-windows-x64.zip`.
+
+3. After the download is complete, use compression software to unzip the zip file and locate the folder named `legacy-script-engine-quickjs`.
+
+4. Copy this folder to the `plugins` folder in the BDS root directory.
 
 #### How to install the plugin  
 
