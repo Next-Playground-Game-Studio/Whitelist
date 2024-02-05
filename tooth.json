@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "tooth": "github.com/Next-Playground-Game-Studio/Whitelist",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "info": {
     "name": "高级白名单",
     "description": "高级白名单，让更新白名单不再像 Bugjang 的原版白名单一样复杂！",
