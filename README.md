@@ -22,7 +22,7 @@ lip install github.com/Next-Playground-Game-Studio/Whitelist
 
 #### How to install LeviLamina
 
-The official LeviLamina documentation provides the download instructions. Please follow the tutorials in their official documentation to complete the installation. [Portal 👉](https://levilamina.liteldev.com/zh/install/)
+The official LeviLamina documentation provides the download instructions. Please follow the tutorials in their official documentation to complete the installation. [Portal 👉](https://levilamina.liteldev.com/install/)
 
 #### How to install the plugin  
 
