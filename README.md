@@ -1,4 +1,4 @@
-# Advanced whitelisting (abbreviated as whitelisting)
+# Advanced Whitelist (short as Whitelist)
 
 English | [简体中文](https://github.com/Next-Playground-Game-Studio/Whitelist/blob/main/README.zh.md)
 
